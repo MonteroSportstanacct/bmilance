@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+/*=============== CONTAINER ===============*/
+.container {
+  height: auto;
+  width: 100%;
+  background-color: #c2e6ed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/*=============== NAVBAR ===============*/
+.navbar {
+  width: 88%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #5f5f5f;
+  font-size: 15px;
+  font-weight: bold;
+}
+.navbar ul li a:hover {
+  color: white;
+}
+/*=============== ABOUT US PAGE ===============*/
+.aboutus {
+  margin: -30px 6% 6% 6%;
+  text-align: justify;
+  align-content: center;
+  background: rgb(255,255,255,0.6);
+  border-radius: 1.5em;
+}
+
+.column {
+  padding: 20px;
+  float: left;
+  width: 50%;
+}
+
+.aboutus:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+  color: #0f6a51;
+}
+
+.container2 {
+  text-align: center;
+  background: rgb(255,255,255,0.6);
+}
+
+.header {
+  color: #0f6a51;
+  font-size: 20px;
+  margin: auto;
+}
+
+.sb-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teams {
+  margin: 10px;
+  padding: 22px;
+  max-width: 30%;
+  cursor: pointer;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+
+.teams:hover{
+  background: #b5d3da;
+  border-radius: 12px;
+}
+
+.teams img{
+  width: 200px;
+  height: 200px;
+}
+
+.name {
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #0f6a51;
+}
+
+.desig {
+  font-style: italic;
+  color: #888;
+}
+
+.about {
+  margin: 20px 0;
+  font-weight: lighter;
+  color: #4e4e4e;
+}
+
+@media screen and (max-width:600px){
+  .teams {
+    max-width: 100%;
+  }
+}
+
+/*button*/
+/* CSS */
+.button-3 {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100px;
+  height: 40px;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+  transform: scale(1.05);
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+/*form*/
+.txtbloc,p {
+  font-size: 20px;
+}
+
+.tab td{
+  padding: 10px;
+}
+
+input {
+  height: 30px;
+}
+
+input, textarea {
+     padding: 5px;
+     font-size: 16px;
+     border-width: 1px;
+     border-color: #CCCCCC;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 9px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     width: 200px;
+}
+
+textarea {
+  height:150px;
+}
+textarea:focus {
+     outline:none;
+}

@@ -1,0 +1,109 @@
+.employee-form,.employees-table{
+box-sizing: border-box;
+  float: left;
+ 
+}
+
+.employee-form {
+  height: 800px;
+ 
+ /* margin-bottom: 10px; */
+ /* margin-left: 10px; */
+  
+ padding: 20px;
+
+ margin: 10px;
+ width: 40%;
+
+
+}
+.employees-table {
+  height: 800px;
+  margin: 10px;
+  padding: 20px;
+  border-style: solid;
+  border-color: #c2e6ed;
+ overflow-x: auto;
+  overflow-y: auto;
+ /* width: 50%; */
+ /*margin: auto;*/
+/* width: 70%;*/
+  width:calc(50%-20%);
+  max-width: 850px; 
+}
+
+table{
+ border-collapse: collapse;
+}
+table.list{
+ width:100%;
+}
+td, th {
+ border: 1px solid #dddddd;
+ text-align: left;
+ padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+ background-color: #dddddd;
+}
+input[type=text], input[type=number] {
+ width: 100%;
+ padding: 8px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+}
+input[type=submit] {
+ width: 30%;
+ 
+ padding: 10px 18px;
+ /* margin: 0px 0; */
+ border: none;
+ background: #97FEF3;
+  background-image: -webkit-linear-gradient(top, #97FEF3, #73e6b2);
+  background-image: -moz-linear-gradient(top, #97FEF3, #73e6b2);
+  background-image: -ms-linear-gradient(top, #97FEF3, #73e6b2);
+  background-image: -o-linear-gradient(top, #97FEF3, #73e6b2);
+  background-image: linear-gradient(to bottom, #97FEF3, #73e6b2);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+ cursor: pointer;
+}
+
+input[type=reset] {
+ width: 30%;
+ 
+ padding: 10px 18px;
+ /* margin: 0px 0; */
+ border: none;
+ background: #97FEF3;
+  background-image: -webkit-linear-gradient(top, #97FEF3, #73e6b2);
+  background-image: -moz-linear-gradient(top, #97FEF3, #73e6b2);
+  background-image: -ms-linear-gradient(top, #97FEF3, #73e6b2);
+  background-image: -o-linear-gradient(top, #97FEF3, #73e6b2);
+  background-image: linear-gradient(to bottom, #97FEF3, #73e6b2);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+ cursor: pointer;
+}
+
+form div.form-action-buttons{
+ text-align: right;
+}
+a{
+ cursor: pointer;
+ text-decoration: underline;
+ color: #0000ee;
+ margin-right: 4px;
+}
+label.validation-error{
+ color: red;
+ margin-left: 5px;
+}
+.hide{
+ display:none;
+}
