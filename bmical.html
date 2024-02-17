@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>About BMI</title>
+  <link href="designscript.css" rel="stylesheet" type="text/css" />
+   <link href="bmicalstyle.css" rel="stylesheet" type="text/css" />
+  <link href="designbmi.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="basicTimeSetter()">
+  <div class="container">
+    <div class="navbar">
+      <img src="media/bmilance.png" class="logo">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT BMI</a></li>
+        <li><a href="bmical.html">BMI CALCULATOR</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="employee-form">
+        <form id="myform" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+          <div>
+            <label>Full Name: </label><label class="validation-error hide" id="fullNameValidationError">This field is
+              required.</label>
+            <input type="text" name="fullName" id="fullName" onclick="basicTimeSetter()">
+          </div>
+          <div>
+            <label>Age: </label><label class="validation-error hide" id="ageValidationError">This field is
+              required.</label>
+            <input type="number" name="age" id="age">
+          </div>
+          <div>
+            <label>Birthdate (use this format mm-dd-yyyy): </label>
+            <input type="text" name="birthda" id="birthda">
+          </div>
+          <div>
+            <label>Address: </label>
+            <input type="text" name="add" id="add">
+          </div>
+          <div>
+            <label>Weight(kg): </label><label class="validation-error hide" id="weightValidationError">This field is
+              required.</label>
+            <input type="number" name="wei" id="wei">
+          </div>
+          <div>
+            <label>Height(cm): </label><label class="validation-error hide" id="heightValidationError">This field is
+              required.</label>
+            <input type="number" name="hei" id="hei">
+          </div>
+          <div>
+            <label>Phone: </label>
+            <input type="text" name="phon" id="phon">
+          </div>
+          <div>
+            <label>Date: </label>
+            <input type="text" name="dat" id="dat">
+          </div>
+
+
+          <div class="form-action-buttons">
+            <input type="submit" value="Save">
+            <input type="reset" value="Clear" onclick="resetForm()">
+          </div>
+        </form>
+      </div>
+
+      <div class="employees-table">
+        <div>
+          <label>BMI: </label>
+          <input type="text" name="bmi" id="bmi" readonly>
+        </div>
+        <div>
+          <label>Diagnosis: </label>
+          <input type="text" name="dia" id="dia" readonly>
+        </div>
+        
+        <br><br>
+        <table class="list" id="employeeList">
+          <thead>
+            <tr>
+              <th>Fullname</th>
+              <th>Age</th>
+              <th>Birthdate</th>
+              <th>Address</th>
+              <th>Weight</th>
+              <th>Height</th>
+              <th>BMI</th>
+              <th>Diagnosis</th>
+              <th>Phone</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <script src="bmicaljs.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
